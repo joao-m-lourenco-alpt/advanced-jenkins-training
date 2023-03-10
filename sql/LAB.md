@@ -28,6 +28,10 @@ Now that we are able to connect to a SQL server let's create stuff.
     - PostalCode varchar(255)		
     - Country varchar(255)	
 
+## DML Operations
+
+DML stands for Data Manipulation Language and is used to managing and manipulating data in the database.
+
 4. Insert the following data in the table `Costumer`.
 
 | CustomerID    | CustomerName                      | ContactName       | Address	                    | City          | PostalCode    | Country       |
@@ -39,3 +43,9 @@ Now that we are able to connect to a SQL server let's create stuff.
 | 5	            | Berglunds snabbkop                | Christina Berglund| Berguvsvagen 8	            | Lulea	        | S-958 22      | Sweden        |
 
 5. Use the `SELECT` statement to get all the records of the `Costumer` table.
+
+6. How many different countries are from the customers?
+
+7. Retrieve all the information from all the customers from Mexico.
+
+8. Retrieve all the information from the client with 'CustomerID' equals to 1.
