@@ -48,4 +48,4 @@ DML stands for Data Manipulation Language and is used to managing and manipulati
 
 7. Retrieve all the information from all the customers from Mexico.
 
-8. Retrieve all the information from the client with 'CustomerID' equals to 1.
+8. Retrieve all the information from the client with `CustomerID` equals to 1.
