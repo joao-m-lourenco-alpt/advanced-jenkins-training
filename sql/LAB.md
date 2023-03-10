@@ -37,3 +37,5 @@ Now that we are able to connect to a SQL server let's create stuff.
 | 3	            | Antonio Moreno Taquería           | Antonio Moreno    | Mataderos 2312	            | México D.F.	| 05023	        | Mexico        |
 | 4             | Around the Horn                   | Thomas Hardy      | 120 Hanover Sq.	            | London	    | WA1 1DP	    | UK            |
 | 5	            | Berglunds snabbkop                | Christina Berglund| Berguvsvagen 8	            | Lulea	        | S-958 22      | Sweden        |
+
+5. Use the `SELECT` statement to get all the records of the `Costumer` table.
