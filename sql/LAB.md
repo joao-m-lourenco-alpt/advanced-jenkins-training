@@ -49,3 +49,53 @@ DML stands for Data Manipulation Language and is used to managing and manipulati
 7. Retrieve all the information from all the customers from Mexico.
 
 8. Retrieve all the information from the client with `CustomerID` equals to 1.
+
+9. Delete all customers from table which city starts by the letter 'L'.
+
+10. How many customers remain in the table?
+
+11. Delete all records from the table.
+
+12. Insert the data provided in the file `customers.csv` in the table `Costumer`.
+
+13. Retrieve all customers where country is "Germany" and the city is "Berlin" or "Munchen". 
+
+14. Retrieve the contact name and the country of the customers that belong to countries that do not speak portuguese.
+
+15. Retrieve all the customers order by city.
+
+16. Retrieve all the customers sorted descending by name.
+
+17. Update the city and country of the customer with Id=3 to Porto, Portugal respectively.
+
+18. Update the contact name to "Juan Gonzalez" for all records where country is "Mexico".
+
+19. Delete the customer with the name "Koniglich Essen" from the table.
+
+20. Add the column 'Revenue' with type int to the table.
+
+21. Proceed with the following updates:
+
+    - CustomerID=1; Revenue=1230
+    - CustomerID=3; Revenue=530
+    - CustomerID=5; Revenue=29
+    - CustomerID=7; Revenue=900
+    - CustomerID=9; Revenue=666
+
+22. Retrieve the maximum revenue value.
+
+23. Retrieve the minimum revenue value.
+
+24. Retrieve the average revenue value.
+
+25. Retrieve the total value of revenue accomplished by the customers.
+
+26. Retrive all the customers whith revenue value is NULL.
+
+27. Update the revenue value to zero (0) to all customers with revenue value NULL
+
+28. Retrieve the number of customers with revenue value highet that zero (0).
+
+29. Retrieve all the customers woth a revenue value between 500 and 1000.
+
+30. Retrieve the number of customers by country, sorted high to low.  
