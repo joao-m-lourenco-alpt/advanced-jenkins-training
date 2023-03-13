@@ -113,24 +113,24 @@ ls -lh /bin/cat /etc/passwd /usr/bin/passwd
 
 <br>
 
-### Download logo-d2si.png and d2si-mag-nouveaux-mc3a9tiers_2015.pdf using wget
+### Download dummy.pdf and logo.png using wget
 ```console
-wget https://www.d2-si.fr/images/common/logo-d2si.png
-wget http://blog.d2-si.fr/wp-content/uploads/2015/07/d2si-mag-nouveaux-mc3a9tiers_2015.pdf
+wget https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+wget https://d33wubrfki0l68.cloudfront.net/b5759d3228a9bc5fcf2a87cb7175eafc1d417c4b/4de06/events/2023-melbourne/logo.png
 ```
 
 <br>
 
-### Display type of file of logo-d2si.png and d2si-mag-nouveaux-mc3a9tiers_2015.pdf
+### Display the type of file of logo.png and dummy.pdf
 ```console
-file logo-d2si.png d2si-mag-nouveaux-mc3a9tiers_2015.pdf
+file logo.png dummy.pdf
 ```
 
 <br>
 
-### Rename logo-d2si.png to logo-d2si.pdf
+### Rename logo.png to logo.pdf
 ```console
-mv logo-d2si.png logo-d2si.pdf
+mv logo.png logo.pdf
 ```
 
 <br>
@@ -151,7 +151,7 @@ touch today.txt yesterday.txt
 
 <br>
 
-### Change the date on yesterday.txt to match yesterday's date
+### Change the creation date on yesterday.txt to match yesterday's date
 ```console
 touch -d "yesterday" yesterday.txt
 ```
@@ -235,7 +235,7 @@ more /var/log/syslog
 
 ### Use ls to find the biggest file in /etc
 ```console
-ls -lhS /etc | head -n 1
+ls -lhS /etc | head -n 2
 ```
 
 <br>
@@ -286,7 +286,7 @@ ls /boot/*[.-]*
 
 <br>
 
-### List all files in /etc using echo(1)
+### List all files in /etc using echo
 ```console
 echo /etc/*
 ```
@@ -313,7 +313,7 @@ date > /tmp/now
 
 ### Copy the content of the file /etc/services to /tmp/services without using the commands “cp”, “mv” and “rm”
 ```console
-cat /etc/services | tee /tmp/services > /dev/null
+cat /etc/services | tee /tmp/services
 ```
 
 <br>
@@ -327,6 +327,6 @@ ls -1 /proc | grep ^[0-9] | sort
 
 ### List the filesystem root directory content by line, and filter output to replace all consonants with the character “_”
 ```console
-ls -1 / | sed -e 's,[^aeiouy],_,g'
+ls -1 / | sed -e 's,[^aeiou],_,g'
 ```
 
