@@ -3,4 +3,4 @@ Learn you will!
 
 ## Available modules
 
-> [Linx](/linux)
+> [Linux](/linux)
