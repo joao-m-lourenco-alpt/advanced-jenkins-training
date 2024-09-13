@@ -53,6 +53,8 @@ SELECT * FROM Customer
 
 -- 12
 
+-- MSSQL
+
 BULK INSERT Customer
 FROM '/customers.csv'
 WITH
@@ -62,6 +64,15 @@ WITH
     ROWTERMINATOR = '\n',   --Use to shift the control to next row
     TABLOCK
 );
+
+-- Postgres
+
+-- Copy file to Postgres sever
+-- scp -r . linuxlearner@20.111.44.220:/home/linuxlearne
+COPY Customer(CustomerID,CustomerName,ContactName,Address,City,PostalCode,Country)
+FROM '/home/linuxlearner/customers.csv'
+DELIMITER E'\t'
+CSV;
 
 
 -- 13
@@ -144,7 +155,7 @@ SELECT * FROM Customer WHERE Revenue BETWEEN 500 AND 1000
 
 -- 30
 
-SELECT COUNT(CustomerID) AS #, Country
+SELECT COUNT(CustomerID), Country
 FROM Customer
 GROUP BY Country
 ORDER BY COUNT(CustomerID) DESC;
