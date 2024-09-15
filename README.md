@@ -3,4 +3,6 @@ Learn you will!
 
 ## Available modules
 
-> [Linux](/linux)
+> [Linux](/linux/labs)
+
+> [Shell](/shell-scripting/labs)
