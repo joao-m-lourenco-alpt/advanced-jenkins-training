@@ -6,7 +6,6 @@ Welcome to the Linux basics laboratory. We prepared some exercises to improve yo
 
 Do the next exercises per order.
 
-
 1. What is the user that you logged in?
 2. Display your current directory.
 3. Change to the `/etc` directory
