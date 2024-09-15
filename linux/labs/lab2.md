@@ -17,3 +17,5 @@ Do the next exercises per order.
 10. Create a directory called `~/testbackup` and copy all files from `~/touched` in it.
 11. Use one command to remove the directory `~/testbackup` and all files in it.
 12. Create a directory `~/etcbackup` and copy all *.conf files from `/etc` in it. Did you include all subdirectories of `/etc`?
+
+Next step: [Lab3](lab3.md)
