@@ -1,4 +1,4 @@
-# Linux basics LAB5
+# Linux basics LAB6
 
 ## Exercises
 
