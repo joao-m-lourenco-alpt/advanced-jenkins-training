@@ -24,3 +24,5 @@ git add .
 git commit -m "a verty nice message"
 git push
 ```
+
+5. Let's start with the exercises: [Lab1](linux/lab/lab1.md)
