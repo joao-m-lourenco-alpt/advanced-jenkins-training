@@ -7,8 +7,8 @@ Welcome to the Linux basics laboratory. We prepared some exercises to improve yo
 Do the next exercises per order.
 
 
-1. Display your current directory
-2. Change to the /etc directory
+1. Display your current directory;
+2. Change to the `/etc` directory;
 3. Now change to your home directory using only 3 key presses
 4. Change to the /boot/grub directory using only 11 key presses
 5. Go to the parent directory of the current directory
