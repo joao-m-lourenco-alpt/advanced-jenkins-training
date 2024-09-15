@@ -17,7 +17,7 @@ Do the next exercises per order.
 9. Stay where you are, and list the contents of `/bin` and `/sbin`.
 10. List all the files (including hidden files) in your home directory in a human readable format
 11. Create a directory `linuxlab` in your home directory
-12. Change to the `/etc` directory, stay here and create a directory `textlinuxdir` in your home directory
+12. Change to the `/etc` directory, stay here and create a directory `testlinuxdir` in your home directory
 13. Create in one command the directories hierarchy ~/dir1/dir2/dir3 inside the diretory `textlinuxdir`. 
 14. Remove the directory `textlinuxdir`
 
