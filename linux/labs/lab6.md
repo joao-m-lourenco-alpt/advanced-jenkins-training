@@ -14,20 +14,9 @@ Do the next exercises per order.
 8. List all the apt pakaches install in your system.
 9. Update the apt list.
 10. Install Postgres in your system.
-11. Check if the Postgres service (postgres.service) is running.
+11. Check if the Postgres service (postgres.service) is running (hit: use systemctl).
 12. Install the Postgres client.
-13. Using the Postgres client (psql) connect to the Postgres server and list the databases. 
+13. Using the Postgres client (`psql`) connect to the Postgres server and list the databases. 
 
 
 **THE END**
-
-
-
-
-
-
-3. Sort all `/proc` directory content by line, and filter output to only display lines beginning with a digit (hint: use `grep ^[0-9]` and sort(1)). 
-4. List the filesystem root directory `/` content by line, and filter output to replace all consonants with the character “_” (hint: use `sed -e 's,[!aeiouy],_,g'`)
-
-
-Next step: [Lab6](lab6.md)
