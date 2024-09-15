@@ -21,3 +21,5 @@ Do the next exercises per order.
 12. Change to the `/etc` directory, stay here and create a directory `textlinuxdir` in your home directory
 13. Create in one command the directories hierarchy ~/dir1/dir2/dir3 inside the diretory `textlinuxdir`. 
 14. Remove the directory `textlinuxdir`
+
+Next step: [Lab2](lab2.md)
