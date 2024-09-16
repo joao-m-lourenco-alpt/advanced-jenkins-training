@@ -12,7 +12,7 @@ Do the next exercises per order.
 6. Rename the file `postgres_newusers.sql` to `postgres_oldusers.sql`.
 7. Create a directory `~/touched` and enter it.
 8. Create the files `today.txt` and `yesterday.txt` in touched.
-9. Change the creation date on `yesterday.txt` to match yesterday's date.
+9. Change the modification date on `yesterday.txt` to match yesterday's date.
 10. Copy `yesterday.txt` to `copy.yesterday.txt`.
 11. Create a directory called `~/testbackup` and copy all files from `~/touched` in it.
 12. Use one command to remove the directory `~/testbackup` and all files in it.
