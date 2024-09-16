@@ -4,7 +4,7 @@
 
 Do the next exercises per order.
 
-1. Download the file `postgres_users.sql` (https://github.com/devopsdelivery/yoda/blob/natixis-academy/linux/files/postgres_users.sql) with the command `wget`.
+1. Download the file `postgres_users.sql` (https://github.com/devopsdelivery/yoda/blob/main/linux/files/postgres_users.sql) with the command `wget`.
 2. Display the size and type of file of `postgres_users.sql`. 
 3. Display the type of file of `postgres_users.sql`.
 4. Move the file `postgres_users.sql` to the directory `/linuxlab`.  
