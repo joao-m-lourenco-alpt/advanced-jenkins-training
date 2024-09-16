@@ -8,7 +8,7 @@ In order to register your steps and answers to the different exercises that are 
 1. Clone this repository to your laptop
 
 ```
-git clone git@github.com:devopsdelivery/yoda.git
+git clone https://github.com/devopsdelivery/yoda.git
 ```
 
 2. Create a new branch from `main`with your name: 
