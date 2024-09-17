@@ -1,4 +1,4 @@
-# Bash Scripting LAB2
+# Shell LAB2
 
 ## Exercises
 Create a script that will do the following:
@@ -8,8 +8,8 @@ Create a script that will do the following:
 
 And display this output:
 
-<h3 style="text-align:center">First number is <b>"even or odd"</b></h3>
-<h3 style="text-align:center">Second number is <b>"even or odd"</b></h3>
-<h3 style="text-align:center">Third number is <b>"even or odd"</b></h3>
+### First number is "even or odd"
+### Second number is "even or odd"
+### Third number is "even or odd"
 
-**THE END**
+Next setp: [Lab3](lab3.md)
