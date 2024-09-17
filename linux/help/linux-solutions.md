@@ -379,7 +379,7 @@ nano insert_users_table
 
 ### 6. Add the files create_users_table and insert_users_table to an tar archive with the name dbscripts.tar
 ```console
-tar xvf dbscripts.tar create_users_table insert_users_table
+tar cvf dbscripts.tar create_users_table insert_users_table
 ```
 
 <br>
