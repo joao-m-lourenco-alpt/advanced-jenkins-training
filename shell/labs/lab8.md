@@ -11,4 +11,4 @@ You want to monitor system resources (CPU, memory, and disk usage). Write a shel
 - Runs the checks every 5 minutes.
 
 
-Next setp: [Lab8](lab8.md)
+**THE END**
