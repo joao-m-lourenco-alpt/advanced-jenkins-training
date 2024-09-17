@@ -1,4 +1,4 @@
-# Bash Scripting LAB1
+# Shell LAB1
 
 Welcome to the Bash Scripting laboratory. We prepared some exercises to improve your Shell Scripting knowledge.
 

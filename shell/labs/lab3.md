@@ -1,15 +1,18 @@
-# Bash Scripting LAB2
+# Bash Scripting LAB3
 
 ## Exercises
-Create a script that will do the following:
-- Receive three numbers as input parameters
-- Print on stdout if each number is even or odd
+
+In your Linux console:
+1. On your home directory create a new directory: `renamedir`
+2. Create the following files in the `renamedir` directory:
+```console
+file1.txt
+file2.txt
+file.txt
+```
+
+Now, create a script that will do the following:
+- Rename all the files in `renamedir` by adding a prefix "backup_" to the file names.
 
 
-And display this output:
-
-<h3 style="text-align:center">First number is <b>"even or odd"</b></h3>
-<h3 style="text-align:center">Second number is <b>"even or odd"</b></h3>
-<h3 style="text-align:center">Third number is <b>"even or odd"</b></h3>
-
-**THE END**
+Next setp: [Lab4](lab4.md)
