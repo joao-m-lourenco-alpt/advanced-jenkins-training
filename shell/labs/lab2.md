@@ -1,6 +1,6 @@
 # Shell LAB2
 
-## Exercises
+## Exercise
 Create a script that will do the following:
 - Receive three numbers as input parameters
 - Print on stdout if each number is even or odd

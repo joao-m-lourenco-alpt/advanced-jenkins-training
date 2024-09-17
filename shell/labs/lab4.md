@@ -1,6 +1,6 @@
 # Bash Scripting LAB4
 
-## Exercises
+## Exercise
 
 Write a script that checks the disk usage of a system and prints the message:
 

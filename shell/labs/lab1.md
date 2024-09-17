@@ -2,7 +2,7 @@
 
 Welcome to the Bash Scripting laboratory. We prepared some exercises to improve your Shell Scripting knowledge.
 
-## Exercises
+## Exercise
 Create a script that will ask the following questions:
 - What is your first name?
 - What is your last name?

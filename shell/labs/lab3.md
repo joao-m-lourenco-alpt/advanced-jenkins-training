@@ -1,6 +1,6 @@
 # Bash Scripting LAB3
 
-## Exercises
+## Exercise
 
 In your Linux console:
 1. On your home directory create a new directory: `renamedir`
