@@ -8,7 +8,7 @@ You want to monitor system resources (CPU, memory, and disk usage). Write a shel
     - CPU usage exceeds 80%.
     - Memory usage exceeds 90%.
     - Disk usage exceeds 85%.
-- Runs the checks every 5 minutes.
+- Runs the checks every 1 minute.
 
 
 **THE END**
