@@ -6,7 +6,7 @@ Do the next exercises per order.
 
 1. In your home directory create the directory `/linuxdatabase`.
 2. Create the the file `create_users_table`.
-3. Insert the content in the file [create_table_users.sql](/files/create_table_users.sql) into the file `create_users_table` (use the nano editor).
+3. Insert the content in the file [create_table_users.sql](linux/files/create_table_users.sql) into the file `create_users_table` (use the nano editor).
 4. Create the the file `insert_users_table`.
 5. Insert the content in the file [insert_table_users.sql](/files/create_table_users.sql) into the file `insert_users_table` (use the nano editor).
 6. Add the files `create_users_table` and `insrt_users_table` to a tar archive with the name `dbscripts.tar`. 
