@@ -10,6 +10,6 @@ Create a script that will ask the following questions:
 
 And display this output:
 
-### Nice to meet you "first name" "last name" from "birth place"
+### Nice to meet you "first name" "last name" from "birth place".
 
 Next setp: [Lab2](lab2.md)
