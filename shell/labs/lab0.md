@@ -22,7 +22,19 @@ git clone git@github.com:devopsdelivery/yoda.git
 git checkout -b shell-firstname-lastname 
 ```
 
-3. In the folder `/shell/students`create a markedownfile with your name: `Shell-FirstName-LastName.md`
+3. In the folder `/shell/students`create a shell script by each lab:
+
+```
+lab1.sh
+```
+```
+lab2.sh
+```
+...
+
+```
+lab6.sh
+```
 
 4. Use this file to register all the work (don't forget to commit and push your work regularly)
 ```
