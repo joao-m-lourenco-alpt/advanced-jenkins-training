@@ -5,4 +5,4 @@ Learn you will!
 
 > [Linux](/linux/labs)
 
-> [Shell](/shell-scripting/labs)
+> [Shell](/shell/labs)
