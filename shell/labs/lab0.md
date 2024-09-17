@@ -24,7 +24,7 @@ git checkout -b shell-firstname-lastname
 
 3. In the folder `/shell/students`create a markedownfile with your name: `Shell-FirstName-LastName.md`
 
-4. Use this file to register all the work
+4. Use this file to register all the work (don't forget to commit and push your work regularly)
 ```
 git add .
 git commit -m "a verty nice message"
