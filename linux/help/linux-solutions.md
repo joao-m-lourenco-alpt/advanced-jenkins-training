@@ -407,14 +407,14 @@ sudo apt update
 
 ### 10. Install Postgres in your system.
 ```console
-sudo apt install postgres
+sudo apt install postgresql
 ```
 
 <br>
 
 ### 11. Check if the Postgres service (postgres.service) is running (hit: use systemctl).
 ```console
-systemctl status postgres.service
+systemctl status postgresql.service
 ```
 
 <br>
