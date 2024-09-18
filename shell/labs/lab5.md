@@ -11,7 +11,7 @@ error: This is a error message
 WARNING: This is a ERROR message
 ```
 4. Create the file `replace2.log` inside the directory `replacedir`.
-5. Add the follwoing content to the file `replace1.log`:
+5. Add the follwoing content to the file `replace2.log`:
 ```console
 ERROR: This is a error message
 ERROR: This is other ERROR message
