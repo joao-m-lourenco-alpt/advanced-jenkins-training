@@ -9,7 +9,7 @@ Write a script that checks the disk usage of a system and prints the message:
 and the message: "Disk usage ok. Current usage: $USAGE" if the disk usage is below 80%.
 
 
-### TIP
+#### TIP
 ```
 USAGE=$(df / | grep / | awk '{ print $5 }' | sed 's/%//')
 ```
