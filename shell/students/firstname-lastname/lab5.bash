@@ -1,0 +1,1 @@
+find . -type f -name '*' -exec sed -i -r 's/ERROR/WARNING/g' {} +
