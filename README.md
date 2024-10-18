@@ -6,3 +6,5 @@ Learn you will!
 > [Linux](/linux/labs)
 
 > [Shell](/shell/labs)
+
+> [Git](/git)
