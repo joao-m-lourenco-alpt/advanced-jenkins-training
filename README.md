@@ -3,7 +3,7 @@ Learn you will!
 
 ## Available modules
 
-> [Linux](/linux/labs)
+> [Linux](/linux/)
 
 > [Shell](/shell/labs)
 
