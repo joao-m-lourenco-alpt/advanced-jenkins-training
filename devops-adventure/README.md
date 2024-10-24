@@ -108,7 +108,7 @@ For defining the pipeline [GitHub Actions](https://github.com/features/actions) 
 2. The goal is to execute locally the entire system using the image pulled from Docker Hub.
 
 
-## - CONGRATULATIONS YOU REACHED THE END OF YOUR ADVENTURE -
+**CONGRATULATIONS YOU REACHED THE END OF THE ADVENTURE**
 
 
 
