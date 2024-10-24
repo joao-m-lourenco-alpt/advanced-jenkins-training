@@ -57,7 +57,7 @@ You and your team will start a DevOps Adventure where you will automate the deve
 
 ### Chapter 5 - Database Migrations
 
-[Flyway][Flyway](https://www.red-gate.com/products/flyway/) is a database migration tool that makes sure that migrations are execute according to a order and only once.  
+[Flyway](https://www.red-gate.com/products/flyway/) is a database migration tool that makes sure that migrations are execute according to a order and only once.  
 
 1. You shoudl use [Flyway Docker](https://hub.docker.com/r/flyway/flyway).
 2. Give it a try by runnig a Flyway container on your machine (`docker run`).
@@ -67,5 +67,11 @@ You and your team will start a DevOps Adventure where you will automate the deve
 
 
 ## PART 3 - LOCAL DEVELOPMENT - APP
+
+In this part your goal is to create and dockerize a Python application that will allow:
+- __Create a new user__;
+- __Get the list of all users__;
+- __Get the list of products bought by a specific user__.
+
 
 
