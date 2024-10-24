@@ -83,7 +83,7 @@ In this part your goal is to create and dockerize a Python application that will
 ### Chapter 7 - Dockerize the application
 
 1. Create the `Dockerfile` for the application.
-2. Update the docker compose file in order to orchestarte: database, flyway and application
+2. Update the docker compose file in order to orchestarte: database, flyway and application.
 
 
 ## PART 3 - PIPELINE
@@ -93,11 +93,11 @@ In this part your goal is to create and dockerize a Python application that will
 For defining the pipeline [GitHub Actions](https://github.com/features/actions) sould be used.
 
 1. Create your GitHub Actions worflow file: `.github/workflows/pipeline.yml`
-2. Define the application pipeline
+2. Define the application pipeline:
     - build
     - test
     - upload (to Docker Hub)
-3. If the pipeline succeeds the image should be uploaded to Docker Hub using the covention: `teamname:tag`
+3. If the pipeline succeeds the image should be uploaded to Docker Hub using the covention: `teamname:tag`.
 
 
 ## PART 4 - DEPLOY
