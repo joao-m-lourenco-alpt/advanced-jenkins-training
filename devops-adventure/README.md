@@ -35,7 +35,7 @@ You and your team will start a DevOps Adventure where you will automate the deve
 1. You will use [Microsoft SQL Server docker version](https://hub.docker.com/r/microsoft/mssql-server).
 2. You should be able to execute a container of MSSQL Server on your machine (`docker run`).
 3. Test the connection to the database. You can a tool like [DBeaver](https://dbeaver.io/). 
-4. A new database needs to be created to store the data model. The name of the database should be `adventuredb`.
+4. A new database needs to be created to store the data model. The name of the database should be `adventure-db`.
 
 
 ### Chapter 3.2 - Database Setup - Postgres
@@ -44,7 +44,7 @@ You and your team will start a DevOps Adventure where you will automate the deve
 
 1. You should be able to execute a container of Postgres on your machine (`docker run`).
 2. Test the connection to the database. You can a tool like [DBeaver](https://dbeaver.io/). 
-3. A new database needs to be created to store the data model. The name of the database should be `adventuredb`.
+3. A new database needs to be created to store the data model. The name of the database should be `adventure-db`.
 
 
 ### Chapter 4 - Data Model
@@ -62,8 +62,8 @@ You and your team will start a DevOps Adventure where you will automate the deve
 1. You shoudl use [Flyway Docker](https://hub.docker.com/r/flyway/flyway).
 2. Give it a try by runnig a Flyway container on your machine (`docker run`).
 3. Now you need to create the migration scripts that will allow to define the data model. Make the migrations small as possible.
-4. Flyway will be resposible to apply the migrations to the database `adventuredb`.
-5. Since the database `adventuredb` needs to be running in order to Flyway apply the magrations - you should use `docker-compose` to orchestrate this two containers.    
+4. Flyway will be resposible to apply the migrations to the database `adventure-db`.
+5. Since the database `adventure-db` needs to be running in order to Flyway apply the magrations - you should use `docker-compose` to orchestrate this two containers.    
 
 
 ## PART 3 - LOCAL DEVELOPMENT - APP
@@ -77,7 +77,7 @@ In this part your goal is to create and dockerize a Python application that will
 - __Get the list of products bought by a specific user__
 
 1. To create the Python application you use [FastAPI](https://fastapi.tiangolo.com/) - a framework to build APIs with Python.
-2. Create at least one unit test. You should use [Pytest](https://docs.pytest.org/en/stable/)
+2. Create at least one unit test. You should use [Pytest](https://docs.pytest.org/en/stable/) to run the test(s).
 
 
 ### Chapter 7 - Dockerize the application
@@ -94,10 +94,10 @@ For defining the pipeline [GitHub Actions](https://github.com/features/actions) 
 
 1. Create your GitHub Actions worflow file: `.github/workflows/pipeline.yml`
 2. Define the application pipeline:
-    - build
-    - test
-    - upload (to Docker Hub)
-3. If the pipeline succeeds the image should be uploaded to Docker Hub using the covention: `teamname:tag`.
+    - Test: run the unit tests (if the tests fail the pipeline should fail)
+    - Build: build the Docker image
+    - Publish (upload the image to Docker Hub)
+3. If the pipeline succeeds the image should be uploaded to Docker Hub using the covention: `adventure-app:tag`.
 
 
 ## PART 4 - DEPLOY
