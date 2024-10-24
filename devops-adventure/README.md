@@ -21,7 +21,7 @@ You and your team will start a DevOps Adventure
 4. You need to protect the branch `main` in the way that any change in this branch needs to happen thorough a Pull Request.
     - In the other words, changes to `main` branch need to be revied and approved by a different team member.
 5. You and your team need to define your branching strategy - guideline of collaboration. ([GitHub Flow](https://githubflow.github.io/), [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [Trunk based](https://trunkbaseddevelopment.com/)).
-6. Document the defined branching strategy in your `README` file.
+6. Document the branching strategy by the team in the `README` file.
 
 
 
