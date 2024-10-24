@@ -68,10 +68,48 @@ You and your team will start a DevOps Adventure where you will automate the deve
 
 ## PART 3 - LOCAL DEVELOPMENT - APP
 
+### Chapter 6 - Developing the application
+
 In this part your goal is to create and dockerize a Python application that will allow:
-- __Create a new user__;
-- __Get the list of all users__;
-- __Get the list of products bought by a specific user__.
+- __Create a new user__
+- __Get the list of all users__
+- __Get the list of all products__
+- __Get the list of products bought by a specific user__
+
+1. To create the Python application you use [FastAPI](https://fastapi.tiangolo.com/) - a framework to build APIs with Python.
+2. Create at least one unit test. You should use [Pytest](https://docs.pytest.org/en/stable/)
+
+
+### Chapter 7 - Dockerize the application
+
+1. Create the `Dockerfile` for the application.
+2. Update the docker compose file in order to orchestarte: database, flyway and application
+
+
+## PART 3 - PIPELINE
+
+### Chapter 8 - Defining and implmenting the pipeline (CI)
+
+For defining the pipeline [GitHub Actions](https://github.com/features/actions) sould be used.
+
+1. Create your GitHub Actions worflow file: `.github/workflows/pipeline.yml`
+2. Define the application pipeline
+    - build
+    - test
+    - upload (to Docker Hub)
+3. If the pipeline succeeds the image should be uploaded to Docker Hub using the covention: `teamname:tag`
+
+
+## PART 4 - DEPLOY
+
+### Chapter 9 - Closing the loop
+
+1. Create a docker compose that will download the created image.
+2. The goal is to execute locally the entire system using the image pulled from Docker Hub.
+
+
+## - CONGRATULATIONS YOU REACHED THE END OF YOUR ADVENTURE -
+
 
 
 
