@@ -2,7 +2,7 @@
 
 ## The goal
 
-You and your team will start a DevOps Adventure 
+You and your team will start a DevOps Adventure where you will automate the development of an application. 
 
 ## Requirements
 - Docker installed in your machine
@@ -28,7 +28,7 @@ You and your team will start a DevOps Adventure
 
 ## PART 2 - LOCAL DEVELOPMENT - DATABASE
 
-## Chapter 3.1 - Database Setup - MS SQL Server
+### Chapter 3.1 - Database Setup - MS SQL Server
 
 [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2022) is a database server tha you will us for storing data. 
 
@@ -38,7 +38,7 @@ You and your team will start a DevOps Adventure
 4. A new database needs to be created to store the data model. The name of the database should be `adventuredb`.
 
 
-## Chapter 3.2 - Database Setup - Postgres
+### Chapter 3.2 - Database Setup - Postgres
 
 [Postgres](https://www.postgresql.org/) is a open source object-relational database that you can use for storing data. 
 
@@ -47,7 +47,7 @@ You and your team will start a DevOps Adventure
 3. A new database needs to be created to store the data model. The name of the database should be `adventuredb`.
 
 
-## Chapter 4 - Data Model
+### Chapter 4 - Data Model
 
 1. You need to define the data model for __Users__ and __Products__:
     - The system will contain multiple `Users` (John, Jane, ...). The table Users should have (at least) the columns: ID, Name and Email.
@@ -55,7 +55,7 @@ You and your team will start a DevOps Adventure
     - A user can buy multiple products and a product can be bought by multiple users.
 2. The defined data model should be able to answer the question: "Which produts did the user XZY have bought so far?"
 
-## Chapter 5 - Database Migrations
+### Chapter 5 - Database Migrations
 
 [Flyway][Flyway](https://www.red-gate.com/products/flyway/) is a database migration tool that makes sure that migrations are execute according to a order and only once.  
 
@@ -65,5 +65,7 @@ You and your team will start a DevOps Adventure
 4. Flyway will be resposible to apply the migrations to the database `adventuredb`.
 5. Since the database `adventuredb` needs to be running in order to Flyway apply the magrations - you should use `docker-compose` to orchestrate this two containers.    
 
+
+## PART 3 - LOCAL DEVELOPMENT - APP
 
 
