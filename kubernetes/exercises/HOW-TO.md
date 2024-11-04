@@ -5,13 +5,13 @@
 Start minikube
 
 ```
-mininike start
+minikube start
 ```
 
 Open the dashboard
 
 ```
-mininike dashboard
+minikube dashboard
 ```
 
 
