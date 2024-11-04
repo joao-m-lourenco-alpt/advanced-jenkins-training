@@ -44,3 +44,7 @@ Access the service
 ```
 minikube service myapp-service --url
 ```
+
+## Voting App
+
+[Voting App](https://github.com/eduardopiairo/example-voting-app-kubernetes)
