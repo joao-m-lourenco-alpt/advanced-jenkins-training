@@ -2,8 +2,8 @@
 
 ## Quiz
 
-[Jenkins Quiz](insert-here)
+[Jenkins Quiz](https://forms.gle/5Fmqmar6uPH1pXTV7)
 
 ## Final Test
 
-[Jenkins Final Test](insert-here)
+[Jenkins Final Test](https://forms.gle/thzFknycaopSPK4n6)
