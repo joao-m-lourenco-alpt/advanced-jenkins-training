@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage("Clean up ") {
+            steps {
+                deleteDir() // to clean the working folder inside Jenkins
+            }
+        }
+        stage("Clone Repository") {
+            steps {
+                sh "git clone https://github.com/devopsdelivery/simple-java-maven-app.git"
+            }
+        }
+        stage("Build") {
+            steps {
+                dir("simple-java-maven-app") { //to enter the new directory
+                    sh "mvn clean install" // builds the jar file and cleans old libraries or binaries
+                }
+            }
+        }
+        stage("Test") {
+            steps {
+                dir("simple-java-maven-app") { //to enter the new directory
+                    sh "mvn test" // tests the application
+                }
+            }
+        }
+    }
+}
