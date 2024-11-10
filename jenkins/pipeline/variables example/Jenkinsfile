@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    environment {
+        def myString = "Hello Altice"
+        def myNumber = 10
+        def myBool = true
+    }
+
+    stages {
+        stage("Demo") {
+            steps {
+                sh "echo ${env.myString}"
+                sh "echo ${env.myNumber}"
+                sh "echo ${env.myBool}"
+            }
+        }
+        stage("Real example") {
+            steps {
+                sh "docker image build . -t ecr.com/webserver:${env.BUILD_NUMBER}" // will not work
+            }
+        }
+    }
+}
