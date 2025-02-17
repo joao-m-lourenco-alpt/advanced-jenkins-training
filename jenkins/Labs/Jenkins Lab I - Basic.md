@@ -2,16 +2,34 @@
 <p><strong>🔥 ADVANCED JENKINS TRAINING 🔥</strong></p>
 </div>
 <div style="text-align:center; font-size: 20px;">
-<p><strong>📌Laboratory I</strong></p>
+<p><strong>📌Laboratory I Basic -  Jenkins Set up & Basics</strong></p>
 </div>
 
 <br>
 
+## 🎯 By the end of this lab, trainess will:
+
+Install and configure Jenkins using Docker.
+
+Create and execute a Freestyle Job.
+
+Build and execute a basic Jenkins pipeline.
+
+Integrate Jenkins with GitHub for automated builds.
+
+Work with pipeline parameters for dynamic configurations.
+
+Set up a Multibranch Pipeline to manage different Git branches.
+
+Clean up the Jenkins environment for future setups.
 
 
 ## 1️⃣ Installing and Configuring Jenkins
 
 ### ✅ Objective: Install and configure Jenkins using Docker.
+
+ ---
+
 🔹 **Tasks:**
 
 - Install Docker and Visual Code on your machine (if not already installed). 🐳 <br>
@@ -72,7 +90,8 @@
 🔹 **Tasks:**
 
 - Create a new pipeline named **TestPipeline**. ⛓️
-- In the editor, enter the following code:
+-  Select ➕ New Item -> Pipeline
+- In the **"Pipeline"** section, add **"Pipeline script"** and enter the command:
   ```groovy
   pipeline {
       agent any
@@ -112,6 +131,8 @@
 🔹 **Tasks:**
 
 - Create a new pipeline named **CloneRepo**. 🔄
+-  Select ➕ New Item -> Pipeline
+- In the **Pipeline** section, add **Pipeline script** and enter the command
 - Add the following code:
   ```groovy
   pipeline {
@@ -138,6 +159,8 @@
 ### ✅ Objective: Create a pipeline that accepts user input parameters.
 🔹 **Tasks:**
 - Create a pipeline with a user input parameter:
+- Select ➕ New Item -> **PipelineWithParameter**
+- In the **Pipeline** section, add **Pipeline script** and add the following code:
   ```groovy
   pipeline {
       agent any
@@ -154,7 +177,7 @@
   }
   ```
 - Access Jenkins and try providing your name and running the project.
-- Create a pipeline with user-chosen parameters and display message based on the selected parameters.
+- Create a pipeline with user-chosen parameters and display message based on the selected parameters (replace the previous pipeline).
 ```groovy
   pipeline {
   agent any
@@ -167,7 +190,7 @@
                 script {
                     
                      {
-                        //TODO
+                        
                         /* Display message based on select parameters:
                             TEST -> Deploying to TEST environment...
                             DEV -> Deploying to DEV environment...
@@ -193,8 +216,10 @@
 🔹 **Tasks:**
 
 - Create a new **Multibranch Pipeline** named **MultiBranch-Test**. 🌿
-- Configure it to monitor a Git repository with multiple branches fro each 5 min (H/5 * * * *). 🔄
-- Define a `Jenkinsfile` in the repository with the following content:
+- In the **Branch Sources** section, select **Git** and add your Git repository
+- Configure it to monitor changes for each 5min (H/5 * * * *) 🔄
+- the following code:Configure it to monitor in Branch Sources by selecting a Git 
+- In your `Jenkinsfile` in the repository, add the following content:
   ```groovy
   pipeline {
       agent any

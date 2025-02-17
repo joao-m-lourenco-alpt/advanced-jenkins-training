@@ -1,12 +1,11 @@
-# Base image with Java
+# Base image with Java 17
 FROM openjdk:17-jdk-slim
 
-# Working directory inside the container
+# workifir inside of container
 WORKDIR /app
 
-# Copy the JAR file into the container
+# Copy .jar file to container
 COPY target/my-app-1.0-SNAPSHOT.jar app.jar
 
-
-# Command to run the JAR file
+# Build .jar file
 CMD ["java", "-jar", "app.jar"]

@@ -1,13 +1,25 @@
+
 <div style="text-align:center; font-size: 24px;">
 <p><strong>🔥 ADVANCED JENKINS TRAINING 🔥</strong></p>
 </div>
 <div style="text-align:center; font-size: 20px;">
-<p><strong>📌Laboratory II</strong></p>
+<p><strong>📌Laboratory II Intermediate - Plugins, Pipelines & Deployment</strong></p>
 </div>
 
+## 🎯 By the end of this lab, trainess will:
+
+- Install and configure essential Jenkins plugins.
+- Differentiate between Declarative and Scripted Pipelines.
+- Connect Jenkins to a Git repository for automated builds.
+- Integrate build and test stages within a Jenkins pipeline.
+- Deploy artifacts using Docker from a Jenkins pipeline.
+- Secure Jenkins with credential management for external integrations.
+
 ---
+
 ## 1️⃣ Jenkins Plugins
 ### ✅ Objective: Install and configure essential Jenkins plugins.  
+---
 **Prerequisites**: Jenkins instance with admin access.
 
 🔹 **Tasks:**
@@ -17,7 +29,8 @@
    - Install the following plugins (if not exist):  
      - Docker
      - Docker API
-     - Docker Common   
+     - Docker Common  
+     - Docker Pipeline 
 
 - **Configure Credentials**:
    - Go to **Dashboard > Manage Jenkins > Credentials**
@@ -26,7 +39,7 @@
    - Add a new `Username with Password` credential for your Docker hub.
    - Provide a name for the Docker Hub ID (e.g., docker-hub-credentials).
    
-   ---
+---
 
 ## 2️⃣Declarative vs Scripted Pipeline
 ### ✅ Objective: Write and compare Declarative and Scripted Pipelines.
@@ -122,6 +135,11 @@
 ```bash
    apt-get update && apt-get install -y docker.io
    ```
+   Nota: For permission issue, execute this command:
+    
+  ```bash
+   docker exec -u root -it <CONTAINER_ID> bash
+  ```
 - Create a Docker group and add the Jenkins user:
 ```bash
 groupadd docker
@@ -138,37 +156,64 @@ chmod 666 /var/run/docker.sock
 docker restart <CONTAINER_ID>
 ```
 
+- Add create Docker file in your root project
 - Create a Deployment Pipeline:
 ```groovy
 pipeline {
-  agent any
-   environment {
-        DOCKERHUB_CREDENTIALS = 'your-docker-hub-credential-id' // replace with your ID docker-hub-credentential configuren in jenkins credentials
-        IMAGE_NAME = 'your-docker-image'// replace with your username docker hub:e.g, username/xxxx
+    agent any
+
+    environment {
+        DOCKERHUB_CREDENTIALS = '{{YOUR_GIT_CREDENTIAL_ID}}' //
+        IMAGE_NAME = '{{TOUR_DOCKER_USER_NAME}}/{{given_image_name}}'
     }
 
-    /** TODO 
+     /** TODO 
     1. add clean up stage
     2. add clone repository stage
     3. add maven build stage
     4. add maven test stage
     */
 
-  stages {
-    stage('Docker build') {
-      steps {
-        script {
-           docker.build("${IMAGE_NAME}")
+        stage('Docker Build') {
+            steps {
+                script {
+                    docker.build("${IMAGE_NAME}")
+                }
+            }
         }
-      }
-    }
-    stage('docker push') {
-      steps {
-         docker.withRegistry('', "${DOCKERHUB_CREDENTIALS}") {
+
+        stage('Docker Push') {
+            steps {
+                script {
+                    docker.withRegistry('', "${DOCKERHUB_CREDENTIALS}") {
                         docker.image("${IMAGE_NAME}").push("latest")
                     }
-      }
+                }
+            }
+        }
+    
+    post {
+        always {
+            junit '**/target/surefire-reports/*.xml' // Tests Report
+            archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true // arqquive the JAR file
+        }
+        success {
+            echo 'Deployment completed successfully on Docker Hub!'
+        }
+        failure {
+            echo 'The deployment failed. Check the logs.'
+        }
     }
-  }
 }
 ```
+- Pull Docker image created 
+```bash
+docker pull index.docker.io/{{TOUR_DOCKER_USER_NAME}}/{{given_image_name}}:latest
+```
+- Create docker container with non-detached mode:
+```bash
+docker run --name java-app index.docker.io/{{TOUR_DOCKER_USER_NAME}}/{{given_image_name}}:latest
+ ```
+
+
+
