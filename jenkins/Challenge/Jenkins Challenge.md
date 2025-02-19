@@ -5,7 +5,7 @@
 # 📌 Deploy Java Application on Docker 🐳                       
 
 ## **Challenge Description**  
-Altice company has developed a **Java-based Maven Application** and wants to automate the **build, test, and deployment** process using **Jenkins** and **Docker**.  
+Altice company has developed a **Java-based Maven Application** and wants to automate the **build, test, and deployment** process using **Jenkins and Docker**. Additionally, **Prometheus** will be used for metric collection and disk space monitoring, nd **Grafana** will be used for visualizing the collected metrics.
 
 The goal is to ensure that all code changes are automatically tested and deployed in a Docker environment without manual intervention.
 
@@ -33,15 +33,7 @@ The goal is to ensure that all code changes are automatically tested and deploye
 
 ### 5️⃣ **Disk Space Monitoring**  
    - Ensure that the server has enough disk space before building or deploying the Docker container.  
-   - Implement a Jenkins step to check the available disk space (`df -h`) and alert if it is below a defined threshold.
-
-### 6️⃣ **Email Notifications**  
-   - Configure Jenkins to send email notifications for the following scenarios:
-     - Build Success
-     - Build Failure
-     - Low Disk Space Alert
-   - Use Editable Email Notification Plugin in Jenkins.  
-   - Configure recipients and alert message content.  
+   - Install Disk Usage plugin to check the available disk space.
 
 ---
 
@@ -50,7 +42,8 @@ The goal is to ensure that all code changes are automatically tested and deploye
 ✔ **Docker** for containerization and deployment  
 ✔ **Maven** for building and testing  
 ✔ **GitHub** as the code repository  
-✔ **Docker Hub** for image storage  
+✔ **Prometheus** for metrics <br>
+✔ **Grafana** for metrics visualization
 
 ---
 
@@ -62,11 +55,11 @@ The goal is to ensure that all code changes are automatically tested and deploye
      ```
    - Check the container output:
      ```bash
-     docker run --name {provide project name} index.docker.io/{username/xxxx}:latest
+     docker run --name {{provide project name}} index.docker.io/{username/xxxx}:latest
      ```
 
 ---
 
 ## **Support**  
 > [Jenkins File](/jenkins/Challenge/Jenkinsfile)  
-> [Docker File](/jenkins/Challenge/Dockerfile)  
+> [Docker File](/jenkins/Challenge/Dockerfile) 

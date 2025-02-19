@@ -47,29 +47,19 @@
 🔹 **Tasks:**
 
 - **Declarative Pipeline**:
-   - Create a new Pipeline job with name **DeclarativePipeline** and paste the following code:
+   - Create a new Pipeline job with name **DeclarativePipeline**
+   - Add **Build stage** with message "Building...."
      ```groovy
-     pipeline {
-       agent any
-       stages {
-         stage('Build') {
-           steps {
-             echo 'Building...'
-           }
-         }
-       }
-     }
+    
+     
      ```
    - Run the pipeline and observe the output.
 
 - **Scripted Pipeline**:
-   - Create another Pipeline job with name **ScriptedPipeline**  and paste this code:
+   - Create another Pipeline job with name **ScriptedPipeline** 
+   - Add **Build stage** with message "Building...."
      ```groovy
-     node {
-       stage('Build') {
-         echo 'Building...'
-       }
-     }
+   
      ```
    - Run the pipeline and compare the syntax with the Declarative example.
 

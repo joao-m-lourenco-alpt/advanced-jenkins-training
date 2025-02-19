@@ -52,6 +52,8 @@ Clean up the Jenkins environment for future setups.
     docker exec -it <CONTAINER_ID> cat /var/jenkins_home/secrets/initialAdminPassword
   ```
 - Complete the initial Jenkins setup by Installing suggested plugins. ⚙️
+- Click on **Skipt and continue as admin**
+- Click on **Save and finish**
 
 - Open the terminal on your local machine and install Maven where Jenkins is running.
  
@@ -60,7 +62,7 @@ Clean up the Jenkins environment for future setups.
   apt-get update
   apt-get install maven
  ```
-📌 **Question:** What happens if you restart the container? Does Jenkins retain the configurations? 🤔 <br>
+📌 **Question:** What happens if you restart the container? Does Jenkins retain the configurations? How ? 🤔 <br>
  
 
 ---
@@ -76,7 +78,7 @@ Clean up the Jenkins environment for future setups.
   ```sh
   echo "Hello, Jenkins!"
   ```
-- Save and run the job. ▶️
+- Apply & Save and run the job. ▶️
 - Open the build
 - Click in **Console Output**. 🖥️
 
@@ -89,7 +91,7 @@ Clean up the Jenkins environment for future setups.
 ### ✅ Objective: Create a basic pipeline and understand its components.
 🔹 **Tasks:**
 
-- Create a new pipeline named **TestPipeline**. ⛓️
+- Create a new pipeline named **MyFirstPipeline**. ⛓️
 -  Select ➕ New Item -> Pipeline
 - In the **"Pipeline"** section, add **"Pipeline script"** and enter the command:
   ```groovy
@@ -119,7 +121,7 @@ Clean up the Jenkins environment for future setups.
       }
   }
   ```
-- Save and run the pipeline. 🚀
+- Apply & Save and run the pipeline. 🚀
 
 📌 **Question:** What is the difference between a Freestyle Job and a Pipeline based in you point of view? 🔍
 
@@ -130,13 +132,11 @@ Clean up the Jenkins environment for future setups.
 ### ✅ Objective: Configure Jenkins to automatically clone a GitHub repository.
 🔹 **Tasks:**
 
-- Create a new pipeline named **CloneRepo**. 🔄
--  Select ➕ New Item -> Pipeline
-- In the **Pipeline** section, add **Pipeline script** and enter the command
-- Add the following code:
+- Edit the previous Pipeline **MyFirstPipeline**. 🔄
+- Add the clone stage after **Clean workidir** stage
   ```groovy
-  pipeline {
-      agent any
+ 
+     
       stages {
           stage('Clone repository') {
               steps {
@@ -144,9 +144,9 @@ Clean up the Jenkins environment for future setups.
               }
           }
       }
-  }
+ 
   ```
-- Save and run the pipeline. ✅
+- Apply & Save and run the pipeline. ✅
 - Open the build
 - Click on WorkSpace and verify if the files were cloned correctly 📁
 
@@ -158,46 +158,28 @@ Clean up the Jenkins environment for future setups.
 
 ### ✅ Objective: Create a pipeline that accepts user input parameters.
 🔹 **Tasks:**
-- Create a pipeline with a user input parameter:
-- Select ➕ New Item -> **PipelineWithParameter**
-- In the **Pipeline** section, add **Pipeline script** and add the following code:
-  ```groovy
-  pipeline {
-      agent any
-      parameters {
-          string(name: 'USERNAME', defaultValue: 'user', description: 'Enter your name')
-      }
-      stages {
-          stage('Print Name') {
-              steps {
-                  echo "Welcome, ${USERNAME}!"
-              }
-          }
-      }
-  }
-  ```
-- Access Jenkins and try providing your name and running the project.
-- Create a pipeline with user-chosen parameters and display message based on the selected parameters (replace the previous pipeline).
+
+- Edit the previous Pipeline **MyFirstPipeline**. 🔄
+- Add the parameters step stage after **agent**.
 ```groovy
   pipeline {
   agent any
     parameters {
-        choice(choices: ['TEST', 'DEV', 'QA'], description: 'Which environment to deploy in?', name: 'deployEnv')
+        choice(choices: ['DEV', 'QA'], description: 'Which environment to deploy in?', name: 'deployEnv')
     }
     stages {
         stage('Deploy to Environment') {
             steps {
                 script {
                     
-                     {
+                     
                         
                         /* Display message based on select parameters:
-                            TEST -> Deploying to TEST environment...
                             DEV -> Deploying to DEV environment...
                             QA -> Deploying to QA environment...
                         */
 
-                    }
+                    
                 }
             }
         }
@@ -215,10 +197,9 @@ Clean up the Jenkins environment for future setups.
 ### ✅ Objective: Configure a Multibranch Pipeline to handle different branches of a Git repository.
 🔹 **Tasks:**
 
-- Create a new **Multibranch Pipeline** named **MultiBranch-Test**. 🌿
+- Create a new **Multibranch Pipeline** named **MyFirstMultiBranchPipeline**. 🌿
 - In the **Branch Sources** section, select **Git** and add your Git repository
-- Configure it to monitor changes for each 5min (H/5 * * * *) 🔄
-- the following code:Configure it to monitor in Branch Sources by selecting a Git 
+- In the Scan **Multibranch Pipeline Triggers**, configure it to monitor changes for each 5min (H/5 * * * *) 🔄
 - In your `Jenkinsfile` in the repository, add the following content:
   ```groovy
   pipeline {
