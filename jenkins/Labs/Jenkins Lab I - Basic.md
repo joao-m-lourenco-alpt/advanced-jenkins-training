@@ -34,7 +34,8 @@ Clean up the Jenkins environment for future setups.
 
 - Install Docker and Visual Code on your machine (if not already installed). 🐳 <br>
   [Docker Desktop for Windows Donwload](https://docs.docker.com/desktop/setup/install/windows-install/) </br>
-  [VS Code Download](https://code.visualstudio.com/Download)
+  [VS Code Download](https://code.visualstudio.com/Download) <br>
+  [Simple-Java-project](https://github.com/devopsdelivery/simple-java-maven-app.git)
   <br>
 
 - Run the following command to start a Jenkins container:
