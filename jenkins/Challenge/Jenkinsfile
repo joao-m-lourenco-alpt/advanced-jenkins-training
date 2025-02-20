@@ -7,6 +7,12 @@ pipeline {
     }
 
     stages {
+        stage('Branch Info') {
+            steps {
+                echo "Current branch: ${env.BRANCH_NAME}"
+            }
+        }
+        
         stage('Clean up') {
             steps {
                 deleteDir() 
